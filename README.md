@@ -8,31 +8,31 @@ This is basic deploy framework project to github pages instead static project
 
 #### ✨Phone: (+84)337846412
 
-#### Setup project lên repository như bình thường
+#### 1. Setup project lên repository như bình thường
 
-#### Tải dependency vào project:
+#### 2. Tải dependency vào project:
 
 ```
 npm i gh-pages --save-dev
 ```
-#### Thêm 2 lệnh sau vào đầu script trong package.json
+#### 3. Thêm 2 lệnh sau vào đầu script trong package.json
 ```
  "predeploy":"react-scripts build",
  "deploy":"gh-pages -d build",
 ```
 
-#### Tạo file .env và thêm vào file như sau:
+#### 4. Tạo file .env và thêm vào file như sau:
 ```
 PUBLIC_URL="."
 ```
 
-#### Chạy lệnh:
+#### 5. Chạy lệnh:
 ```
 npm run deploy
 ```
-#### Lên github vào github pages lấy link và trải nghiệm :<
+#### 6. Lên github vào github pages lấy link và trải nghiệm :<
 
-####* Lưu ý: Khi cập nhật code xong muốn deploy tiếp bản mới thì chạy lại lệnh:
+#### * Lưu ý: Khi cập nhật code xong muốn deploy tiếp bản mới thì chạy lại lệnh:
 ```
 npm run deploy
 ```
